@@ -1,0 +1,11 @@
+from tkinter import *
+
+raiz = Tk()
+
+raiz.title("La vinotinto")
+raiz.geometry("600x300")
+raiz.iconbitmap("venezuela.ico")
+raiz.config(bg="green")
+raiz.resizable(True,False)
+
+raiz.mainloop()

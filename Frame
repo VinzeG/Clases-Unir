@@ -1,0 +1,31 @@
+from tkinter import *
+
+#RAIZ
+raiz = Tk()
+
+raiz.title("Hola")
+#raiz.geometry("600x300")
+raiz.iconbitmap("venezuela.ico")
+raiz.config(bg="blue")
+raiz.resizable(True,True)
+
+#Frame
+mi_frame = Frame()
+#mi_frame.pack(side="top",anchor="e")
+mi_frame.pack(fill="x", expand="true")
+#mi_frame.pack(fill="y", expand="true")
+#mi_frame.pack(fill="both", expand="true")
+mi_frame.config(bg="green")
+mi_frame.config(width="650", height="350")
+
+#Borde del Frame
+#mi_frame.config(relief="groove")
+mi_frame.config(relief="sunken")
+mi_frame.config(bd="35")
+
+#Cursor del Frame
+#mi_frame.config(cursor="hand1")
+mi_frame.config(cursor="pirate")
+
+
+raiz.mainloop()

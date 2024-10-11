@@ -1,0 +1,17 @@
+from tkinter import *
+
+raiz = Tk()
+
+mi_frame = Frame(width=800, height=500)
+mi_frame.pack()
+mi_imagen=PhotoImage(file="messi.gif")
+
+Label(mi_frame,image=mi_imagen).place(x=100,y=200)
+#LABEL
+#mi_label= Label(mi_frame, text="Viva la Vinotinto")
+#mi_label.place(x=100, y = 200)
+#Label (mi_frame,text="Wao que matematica").place(x=100,y=200)
+#Label(mi_frame,text="Wao que matematica", fg="red").place(x=100,y=200)
+#Label(mi_frame,text= "Hola mundo", fg="red",font=("Arial", 45)).place(x=100, y=100)
+
+raiz.mainloop()

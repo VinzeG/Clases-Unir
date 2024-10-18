@@ -1,0 +1,43 @@
+from tkinter import *
+
+raiz = Tk() 
+
+mi_frame = Frame(raiz,width=600,height=770)
+mi_frame.pack()
+fondo = PhotoImage(file="Cancha.gif")
+Label(mi_frame,image=fondo).place(x=0,y=0)
+
+portero =PhotoImage(file="portero.png")
+Label(mi_frame,image=portero).place(x=201,y=0)
+
+lateral_der =PhotoImage(file="lateralderecho.png")
+Label(mi_frame,image=lateral_der).place(x=20,y=120)
+
+central_der =PhotoImage(file="central_derecho.png")
+Label(mi_frame,image=central_der).place(x=150,y=110)
+
+central_izq =PhotoImage(file="central_izquierdo.png")
+Label(mi_frame,image=central_izq).place(x=270,y=110)
+
+lateral_izq =PhotoImage(file="lateral_izquierdo.png")
+Label(mi_frame,image=lateral_izq).place(x=390,y=120)
+
+mc_derecho =PhotoImage(file="mc_derecho.png")
+Label(mi_frame,image=mc_derecho).place(x=150,y=220)
+
+mc_izquierdo =PhotoImage(file="mc_izquierdo.png")
+Label(mi_frame,image=mc_izquierdo).place(x=270,y=220)
+
+ext_derecho =PhotoImage(file="ext_derecho.png")
+Label(mi_frame,image=ext_derecho).place(x=20,y=350)
+
+ext_izquierdo =PhotoImage(file="ext_izquierdo.png")
+Label(mi_frame,image=ext_izquierdo).place(x=350,y=330)
+
+mco =PhotoImage(file="mco.png")
+Label(mi_frame,image=mco).place(x=200,y=350)
+
+delantero_centro=PhotoImage(file="dc.png")
+Label(mi_frame,image=delantero_centro).place(x=200,y=480)
+
+raiz.mainloop()

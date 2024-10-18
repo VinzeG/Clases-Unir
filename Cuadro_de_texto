@@ -1,0 +1,26 @@
+from tkinter import *
+raiz=Tk()
+mi_frame=Frame(raiz,width=1200,height=600)
+mi_frame.pack()
+
+nombreLabel= Label(mi_frame,text="Nombre:")
+nombreLabel.grid(row=0,column=0)
+
+cuadronombre= Entry(mi_frame)
+cuadronombre.grid(row=0,column=1,sticky="w",padx=10,pady=10)
+cuadronombre.config(fg="red",justify=RIGHT,show="*")
+
+
+apellidoLabel= Label(mi_frame,text="Apellido:")
+apellidoLabel.grid(row=1,column=0)
+
+cuadroapellido= Entry(mi_frame)
+cuadroapellido.grid(row=1,column=1)
+
+telfLabel=Label(mi_frame,text="Telefono:")
+telfLabel.grid(row=2,column=0)
+cuadrotelf=Entry(mi_frame)
+cuadrotelf.grid(row=2,column=1)
+
+
+raiz.mainloop()

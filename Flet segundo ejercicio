@@ -1,0 +1,15 @@
+import flet as ft 
+
+def main (page:ft.Page):
+    page.bgcolor=ft.Colors.GREEN_200
+    page.title="Mi app"
+    texto= ft.Text("Mi primera aplicacion con flet")
+    texto2=ft.Text("Trabajando los textos")
+    
+    def cambiar_texto(e):
+        texto2.value ="Hemos cambiado el texto"
+        page.update()
+    boton= ft.FilledButton(text="Cambiar texto",on_click=cambiar_texto)
+    
+    page.add(texto,texto2,boton)
+ft.app(target=main)
